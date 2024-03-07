@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { FaRegLightbulb } from "react-icons/fa";
-import { MdRadioButtonUnchecked } from "react-icons/md";
+import { ListItem } from "./components/ListItem";
 
 const QUESTION = {
   title: "Elements of a sentiment analysis problem",
@@ -15,10 +16,16 @@ const QUESTION = {
 };
 
 function Quiz() {
+  const [indexChecked, setIndexChecked] = useState("");
+
+  const handleChecked = (index: number) => {
+    setIndexChecked(String(index));
+  };
+
   return (
     <div className="flex items-center min-h-screen">
       <div className="bg-white max-w-3xl mx-auto border border-gray-200 rounded">
-        <div className="px-4 py-4">
+        <div className="px-6 py-6">
           <h2 className="text-lg font-semibold">{QUESTION.title}</h2>
           <p className="text-md font-light">{QUESTION.question}</p>
         </div>
@@ -33,7 +40,7 @@ function Quiz() {
             50px
           </span>
         </div>
-        <div className="px-4 pb-3">
+        <div className="px-6 pb-3">
           <p className="text-lg font-semibold mt-4 mb-2">Possible Answers</p>
           <p className="font-light text-xs text-gray-700 mb-1">
             Select one answer
@@ -41,26 +48,12 @@ function Quiz() {
           <div>
             <ul>
               {QUESTION.alternatives.map((alternative, index) => (
-                <li
-                  key={index}
-                  className="font-light text-sm flex justify-between outline outline-1 outline-gray-200 hover:outline-datacampSkyBlue hover:outline-2 px-2 py-1 mb-2 rounded items-center"
-                >
-                  <label className="flex items-center" htmlFor={String(index)}>
-                    <input
-                      className="opacity-0"
-                      type="radio"
-                      id={String(index)}
-                      name={alternative}
-                    />
-                    <MdRadioButtonUnchecked className="text-gray-300 text-base" />
-                    <span className="text-sm font-light ml-2">
-                      {alternative}
-                    </span>
-                  </label>
-                  <span className="inline-block bg-gray-100 text-xs px-3 py-2 rounded">
-                    PRESS {index + 1}
-                  </span>
-                </li>
+                <ListItem
+                  index={index}
+                  text={alternative}
+                  active={String(index) === indexChecked}
+                  handleChecked={handleChecked}
+                />
               ))}
             </ul>
           </div>
