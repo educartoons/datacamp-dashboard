@@ -6,4 +6,7 @@ describe("<Button />", () => {
   test("should render", () => {
     render(<Button variant="primary">test</Button>);
   });
+  test("should render", () => {
+    render(<Button variant="primary">test</Button>);
+  });
 });
