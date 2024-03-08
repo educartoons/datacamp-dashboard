@@ -1,7 +1,7 @@
 import { MdRadioButtonUnchecked } from "react-icons/md";
 import { MdRadioButtonChecked } from "react-icons/md";
 
-type ListItemProps = {
+export type ListItemProps = {
   index: number;
   text: string;
   active: boolean;

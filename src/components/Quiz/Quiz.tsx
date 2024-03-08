@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaRegCircleCheck, FaRegLightbulb } from "react-icons/fa6";
-import { ListItem } from "./components/ListItem";
-import { Button } from "./components/Button";
+import { ListItem } from "../ListItem/ListItem";
+import { Button } from "../Button/Button";
 
 const QUESTION = {
   title: "Elements of a sentiment analysis problem",
@@ -88,6 +88,7 @@ function Quiz() {
               onClick={handleShowHint}
               variant="secondary"
               icon={<FaRegLightbulb />}
+              data-testid="btn-hint"
             >
               Take Hint
             </Button>
@@ -97,7 +98,7 @@ function Quiz() {
           </div>
         </div>
         {showHint && (
-          <div className="px-6 bg-gray-200 py-4">
+          <div className="px-6 bg-gray-200 py-4" data-testid="hint">
             <h5 className="font-semibold text-sm mb-2">Hint</h5>
             <p className="text-sm">
               Although true AGI (Artificial General Intelligence) is not a

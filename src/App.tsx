@@ -1,5 +1,5 @@
 import { Layout } from "./Layout";
-import { Quiz } from "./Quiz";
+import { Quiz } from "./components/Quiz/Quiz";
 
 function App() {
   return (
