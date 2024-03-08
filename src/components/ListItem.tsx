@@ -1,7 +1,7 @@
 import { MdRadioButtonUnchecked } from "react-icons/md";
 import { MdRadioButtonChecked } from "react-icons/md";
 
-type ListItemProps = {
+export type ListItemProps = {
   index: number;
   text: string;
   active: boolean;
@@ -9,9 +9,9 @@ type ListItemProps = {
 };
 
 const LabelClass =
-  "flex justify-between w-full items-center outline outline-1 outline-gray-200 hover:outline-datacampSkyBlue hover:outline-2 px-2 py-1 mb-2 rounded";
+  "flex justify-between w-full items-center outline outline-1 outline-gray-200 hover:outline-datacampSkyBlue hover:outline-2 px-2 py-2 mb-2 rounded";
 const LabelClassActive =
-  "flex justify-between w-full items-center outline outline-2 outline-datacampSkyBlue hover:outline-datacampSkyBlue hover:outline-2 px-2 py-1 mb-2 rounded";
+  "flex justify-between w-full items-center outline outline-2 outline-datacampSkyBlue hover:outline-datacampSkyBlue hover:outline-2 px-2 py-2 mb-2 rounded";
 
 function ListItem({ index, active, text, handleChecked }: ListItemProps) {
   return (
@@ -37,8 +37,8 @@ function ListItem({ index, active, text, handleChecked }: ListItemProps) {
           <span className="text-sm font-light ml-2">{text}</span>
         </div>
         <div>
-          <span className="inline-block bg-gray-100 text-xs px-3 py-2 rounded">
-            PRESS {index + 1}
+          <span className="inline-block bg-gray-100 text-[0.65rem] px-2 py-1 rounded font-bold tracking-wider">
+            {`PRESS ${index + 1}`}
           </span>
         </div>
       </label>
