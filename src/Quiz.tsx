@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { FaRegCircleCheck } from "react-icons/fa6";
-import { FaRegLightbulb } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaRegCircleCheck, FaRegLightbulb } from "react-icons/fa6";
 import { ListItem } from "./components/ListItem";
+import { Button } from "./components/Button";
 
 const QUESTION = {
   title: "Elements of a sentiment analysis problem",
@@ -17,14 +17,40 @@ const QUESTION = {
 
 function Quiz() {
   const [indexChecked, setIndexChecked] = useState("");
+  const [showHint, setShowHint] = useState(false);
+  const [disableSubmit, setDisableSubmit] = useState(true);
 
   const handleChecked = (index: number) => {
     setIndexChecked(String(index));
   };
 
+  const handleShowHint = () => {
+    setShowHint(true);
+  };
+
+  const handleKeyDown = (event: KeyboardEvent) => {
+    const allowedKeys = [1, 2, 3, 4];
+    if (allowedKeys.includes(Number(event.key))) {
+      setIndexChecked(String(Number(event.key) - 1));
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (indexChecked !== "") {
+      setDisableSubmit(false);
+    }
+  }, [indexChecked]);
+
   return (
     <div className="flex items-center min-h-screen">
-      <div className="bg-white max-w-3xl mx-auto border border-gray-200 rounded">
+      <div className="bg-white w-[768px] max-w-full mx-auto border border-gray-200 rounded">
         <div className="px-6 py-6">
           <h2 className="text-lg font-semibold">{QUESTION.title}</h2>
           <p className="text-md font-light">{QUESTION.question}</p>
@@ -58,15 +84,28 @@ function Quiz() {
             </ul>
           </div>
           <div className="flex justify-between mt-8">
-            <button className="flex items-center border-2 border-datacampBlue py-1 rounded px-4">
-              <FaRegLightbulb />
-              <span className="ml-1 font-medium text-sm">Take hint</span>
-            </button>
-            <button className="border-2 border-datacampGreen bg-datacampGreen font-medium text-sm px-4 py-1 rounded">
+            <Button
+              onClick={handleShowHint}
+              variant="secondary"
+              icon={<FaRegLightbulb />}
+            >
+              Take Hint
+            </Button>
+            <Button variant="primary" disabled={disableSubmit}>
               Submit Answer
-            </button>
+            </Button>
           </div>
         </div>
+        {showHint && (
+          <div className="px-6 bg-gray-200 py-4">
+            <h5 className="font-semibold text-sm mb-2">Hint</h5>
+            <p className="text-sm">
+              Although true AGI (Artificial General Intelligence) is not a
+              reality yet, the latest AI achievements can be deemed as examples
+              halfway between AI and AGI.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
