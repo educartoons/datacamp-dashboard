@@ -1,11 +1,11 @@
 import { Layout } from "./Layout";
-import { Quiz } from "./components/Quiz/Quiz";
+import { CoursePreview } from "./components/CoursePreview/CoursePreview";
 
 function App() {
   return (
     <>
       <Layout>
-        <Quiz />
+        <CoursePreview />
       </Layout>
     </>
   );

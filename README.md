@@ -22,6 +22,7 @@ In our workshop we use VS Code as IDE, and we highly recommend the installion of
 - [x] Using hook useState
 - [x] Using hook useEffect
 - [x] Life Cycle of Components
+- [ ] Context and useContext
 
 ## 2. Stying with TailwindCSS
 
