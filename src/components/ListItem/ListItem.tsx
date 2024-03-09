@@ -1,5 +1,7 @@
 import { MdRadioButtonUnchecked } from "react-icons/md";
 import { MdRadioButtonChecked } from "react-icons/md";
+import { UserContext, usePokemons } from "../../context/UserContext";
+import { useContext } from "react";
 
 export type ListItemProps = {
   index: number;
@@ -14,8 +16,10 @@ const LabelClassActive =
   "flex justify-between w-full items-center outline outline-2 outline-datacampSkyBlue hover:outline-datacampSkyBlue hover:outline-2 px-2 py-1 mb-2 rounded";
 
 function ListItem({ index, active, text, handleChecked }: ListItemProps) {
+  const pokemons = usePokemons();
+  console.log(pokemons);
   return (
-    <li key={index} className="font-light text-sm">
+    <li className="font-light text-sm">
       <label
         onClick={() => handleChecked(index)}
         className={active ? LabelClassActive : LabelClass}

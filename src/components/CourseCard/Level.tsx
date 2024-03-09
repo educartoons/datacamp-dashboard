@@ -20,7 +20,7 @@ function Level({ level }: LevelProps) {
         .map((_, index) => (
           <Dot key={index} />
         ))}
-      <span className="ml-1">{LEVELS.get(level)}</span>
+      <span className="ml-1">{LEVELS.get(level)} </span>
     </div>
   );
 }

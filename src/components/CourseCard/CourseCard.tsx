@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { Level } from "./Level";
 import { ProgressBar } from "./ProgressBar";
@@ -20,6 +21,8 @@ type CourseCardProps = {
 };
 
 function CourseCard({ course }: CourseCardProps) {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white rounded border border-gray-200 flex flex-col justify-between">
       <div className="px-4 py-4">
@@ -53,7 +56,9 @@ function CourseCard({ course }: CourseCardProps) {
       </div>
       <div className="px-4 py-2 flex items-center justify-between border-t border-gray-200">
         <ProgressBar progress={25} />
-        <Button variant="primary">Continue</Button>
+        <Button variant="primary" onClick={() => navigate("/quiz")}>
+          Continue
+        </Button>
       </div>
     </div>
   );

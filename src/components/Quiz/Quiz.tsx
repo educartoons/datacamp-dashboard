@@ -75,6 +75,7 @@ function Quiz() {
             <ul>
               {QUESTION.alternatives.map((alternative, index) => (
                 <ListItem
+                  key={index}
                   index={index}
                   text={alternative}
                   active={String(index) === indexChecked}
