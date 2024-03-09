@@ -1,11 +1,14 @@
-import { Layout } from "./Layout";
-import { Quiz } from "./components/Quiz/Quiz";
+import { Layout } from "./components/Layout/Layout";
+import { CoursesGrid } from "./components/CoursesGrid/CoursesGrid";
+import { Wrapper } from "./components/Wrapper/Wrapper";
 
 function App() {
   return (
     <>
       <Layout>
-        <Quiz />
+        <Wrapper>
+          <CoursesGrid />
+        </Wrapper>
       </Layout>
     </>
   );

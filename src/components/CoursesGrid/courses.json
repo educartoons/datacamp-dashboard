@@ -1,0 +1,511 @@
+[
+  {
+    "datasets": [
+      {
+        "name": "MLB (baseball)",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/288/datasets/e5d60ff535f86d27609312f9e41c35a1d737ddc0/baseball.csv"
+      },
+      {
+        "name": "FIFA (soccer)",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/288/datasets/026a5211b906ac118a09b1a0dbf7df48faafb379/fifa.csv"
+      }
+    ],
+    "difficultyLevel": 1,
+    "id": 735,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Hugo is a data scientist, educator, writer and podcaster formerly at DataCamp. His main interests are promoting data &amp; AI literacy, helping to spread data skills through organizations and society and doing amateur stand up comedy in NYC. If you want to know what he likes to talk about, definitely check out <a href=\"https://www.datacamp.com/community/podcast\">DataFramed</a>, the DataCamp podcast, which he hosted and produced.</p>\n",
+        "id": 301837,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/000/006/original/hugoaboutpic.jpg?1705506415",
+        "marketingBiography": "Data Scientist",
+        "name": "Hugo Bowne-Anderson",
+        "url": "https://www.datacamp.com/instructors/hugobowne"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/intro-to-python-for-data-science/continue",
+    "shortDescription": "Master the basics of data analysis with Python in just four hours. This online course will introduce the Python interface and explore popular packages.",
+    "slug": "intro-to-python-for-data-science",
+    "technologies": [
+      {
+        "id": 2,
+        "name": "Python"
+      }
+    ],
+    "timeNeededInHours": 4,
+    "title": "Introduction to Python",
+    "userCourse": {
+      "certificateId": "60c0697223fb487b45f8c550b7d3d86dcba2c865",
+      "completedAt": null,
+      "completionRate": 0.28,
+      "courseId": 735,
+      "id": 33200230,
+      "inProgress": true,
+      "isCompleted": false,
+      "updatedAt": "2024-03-08 00:39:49 UTC"
+    }
+  },
+  {
+    "datasets": [
+      {
+        "name": "Amazon product reviews",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/4444/datasets/646e9378d0e44ccb55cebd81ecffdc0c755ab2a2/amazon_reviews_sample.csv"
+      },
+      {
+        "name": "IMDB movie reviews",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/4444/datasets/68959c0ad485c329b4990242f16f98e3dbb777c1/IMDB_sample.csv"
+      },
+      {
+        "name": "Tweets of US airline passengers",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/4444/datasets/935f11320d56b1e3730ba786d0cae2f16cc152a9/Tweets.csv"
+      }
+    ],
+    "difficultyLevel": 2,
+    "id": 16852,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "",
+        "id": 702362,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/001/492/original/violeta.jpg?1705586341",
+        "marketingBiography": "Data Scientist",
+        "name": "Violeta Misheva",
+        "url": "https://www.datacamp.com/instructors/violetamisheva"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/sentiment-analysis-in-python/continue",
+    "shortDescription": "Are customers thrilled with your products or is your service lacking? Learn how to perform an end-to-end sentiment analysis task.",
+    "slug": "sentiment-analysis-in-python",
+    "technologies": [
+      {
+        "id": 2,
+        "name": "Python"
+      }
+    ],
+    "timeNeededInHours": 4,
+    "title": "Sentiment Analysis in Python",
+    "userCourse": {
+      "certificateId": "5bab7110844090865c7cf1c10027b13203be286e",
+      "completedAt": null,
+      "completionRate": 0.03,
+      "courseId": 16852,
+      "id": 33202285,
+      "inProgress": true,
+      "isCompleted": false,
+      "updatedAt": "2024-03-07 07:11:20 UTC"
+    }
+  },
+  {
+    "datasets": [],
+    "difficultyLevel": 1,
+    "id": 32245,
+    "inProducts": [
+      "learn.data_literacy"
+    ],
+    "instructors": [
+      {
+        "biography": "<p>Dr. Iván Palomares is a dedicated expert in Education and Artificial Intelligence, with significant experience in directing postgraduate programs in machine learning and data science for top international business schools. As an acclaimed academic leader, he has taught AI-related subjects at prestigious universities and conferences worldwide. His research focuses on personalized recommender systems, reinforcement learning, and generative AI, with notable contributions to applied AI projects in the industry.</p>\n",
+        "id": 12238551,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/002/965/original/2449ACED-A53B-4C22-9EE1-3C1A3A98CBB4.jpg?1705586857",
+        "marketingBiography": "Senior Data Science & AI Manager",
+        "name": "Iván Palomares Carrascosa",
+        "url": "https://www.datacamp.com/instructors/ivanpc86"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/understanding-artificial-intelligence/continue",
+    "shortDescription": "Uncover AI's challenges and societal implications in this theoretical course. Discover machine learning, deep learning, NLP, generative models & more. ",
+    "slug": "understanding-artificial-intelligence",
+    "technologies": [
+      {
+        "id": 7,
+        "name": "Theory"
+      }
+    ],
+    "timeNeededInHours": 2,
+    "title": "Understanding Artificial Intelligence",
+    "userCourse": {
+      "certificateId": "0d1c7743b6fdd58d80df92fc2ed4cf0f0a77a5d9",
+      "completedAt": null,
+      "completionRate": 0.02,
+      "courseId": 32245,
+      "id": 33201818,
+      "inProgress": true,
+      "isCompleted": false,
+      "updatedAt": "2024-03-06 16:37:38 UTC"
+    }
+  },
+  {
+    "datasets": [
+      {
+        "name": "English stopwords",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/932/datasets/8042ed46ae7faef4951fcda771c5acc4fc3c0bf6/english_stopwords.txt"
+      },
+      {
+        "name": "Monty Python and the Holy Grail",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/932/datasets/4921d0bf6a73fd645f49f528faf74a871bb3a0e9/grail.txt"
+      },
+      {
+        "name": "News articles",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/932/datasets/cd04303b8b2904d1025809dfb29076de696a1ffc/News articles.zip"
+      },
+      {
+        "name": "Wikipedia articles",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/932/datasets/37f1eb18b6b7909cd72996edbf90939f7c7b575f/Wikipedia articles.zip"
+      }
+    ],
+    "difficultyLevel": 2,
+    "id": 3629,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Katharine Jarmul runs a data analysis company called kjamistan that specializes in helping companies analyze data and training others on data analysis best practices, particularly with Python. She has been using Python for 8 years for a variety of data work -- including telling stories at major national newspapers, building large scale aggregation software, making decisions based on customer analytics, and marketing spend and advising new ventures on the competitive landscape.</p>\n",
+        "id": 790307,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/000/074/original/Screenshot_2017-06-30_04.01.52.png?1705506697",
+        "marketingBiography": "Founder, kjamistan",
+        "name": "Katharine Jarmul",
+        "url": "https://www.datacamp.com/instructors/katharinecc6b90c27e1b40129c2745c9215cc689"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/introduction-to-natural-language-processing-in-python/continue",
+    "shortDescription": "Learn fundamental natural language processing techniques using Python and how to apply them to extract insights from real-world text data.",
+    "slug": "introduction-to-natural-language-processing-in-python",
+    "technologies": [
+      {
+        "id": 2,
+        "name": "Python"
+      }
+    ],
+    "timeNeededInHours": 4,
+    "title": "Introduction to Natural Language Processing in Python",
+    "userCourse": {
+      "certificateId": "2c25bba5d6684519d5c17c48fb7fc21fd2b5d0fe",
+      "completedAt": null,
+      "completionRate": 0,
+      "courseId": 3629,
+      "id": 33202147,
+      "inProgress": false,
+      "isCompleted": false,
+      "updatedAt": "2024-03-06 16:53:12 UTC"
+    }
+  },
+  {
+    "datasets": [],
+    "difficultyLevel": 1,
+    "id": 29302,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Izzy is a Data Coach at iO-Sphere. She discovered a love for data during her seven years as an accounting professor at the University of Washington. She holds a masters degree in Taxation and is a Certified Public Accountant. Her passion is making learning technical topics fun.</p>\n",
+        "id": 9931231,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/002/636/original/izzy_profile.png?1705586735",
+        "marketingBiography": "Data Coach at iO-Sphere",
+        "name": "Izzy Weber",
+        "url": "https://www.datacamp.com/instructors/izzyweber-9bc35945-95bd-423b-833e-40780c76586f"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/introduction-to-sql/continue",
+    "shortDescription": "Learn how to create and query relational databases using SQL in just two hours.",
+    "slug": "introduction-to-sql",
+    "technologies": [
+      {
+        "id": 3,
+        "name": "SQL"
+      }
+    ],
+    "timeNeededInHours": 2,
+    "title": "Introduction to SQL",
+    "userCourse": null
+  },
+  {
+    "datasets": [],
+    "difficultyLevel": 1,
+    "id": 58,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Jonathan Cornelissen is one of the co-founders of DataCamp and the initial DataCamp CEO, and is interested in everything related to data science, education and entrepreneurship. He holds a PhD in financial econometrics, and was the original author of an R package for quantitative finance. <br><br></p>\n<p>More information at:  <a href=\"https://www.jonathancornelissen.com\">jonathancornelissen.com</a> <br></p>\n<p><a href=\"https://twitter.com/cornelissenjo?ref_src=twsrc%5Etfw\">Follow @cornelissenjo</a> or \n<a href=\"https://www.instagram.com/jonathancornelissen/\">here</a><br></p>\n<p>Read on <a href=\"https://medium.com/@jonathan_cornelissen\">Medium</a>  <br>\nConnect on <a href=\"https://www.linkedin.com/in/jonathan-cornelissen\">Linkedin</a> </p>\n",
+        "id": 464581,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/000/005/original/jonathan.jpg?1705506414",
+        "marketingBiography": "Co-founder of DataCamp",
+        "name": "Jonathan Cornelissen",
+        "url": "https://www.datacamp.com/instructors/jonathanauthor"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/free-introduction-to-r/continue",
+    "shortDescription": "Master the basics of data analysis in R, including vectors, lists, and data frames, and practice R with real data sets. ",
+    "slug": "free-introduction-to-r",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "R"
+      }
+    ],
+    "timeNeededInHours": 4,
+    "title": "Introduction to R",
+    "userCourse": null
+  },
+  {
+    "datasets": [],
+    "difficultyLevel": 1,
+    "id": 23983,
+    "inProducts": [
+      "learn.data_literacy"
+    ],
+    "instructors": [
+      {
+        "biography": "<p>Hadrien has collaborated on 30+ courses ranging from machine learning to database administration through data engineering. He&#39;s currently enrolled in a Masters of Analytics at Georgia Tech.\n<br /> <br />\nHadrien started using DataCamp when the platform only had 27 courses. He then joined the Support team and helped students before becoming a Content Developer himself.\n<br /> <br />\n<a href=\"https://www.linkedin.com/in/hadrienlacroix/\">Follow Hadrien on LinkedIn</a></p>\n",
+        "id": 1710580,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/000/827/original/new_profile_picture_round.PNG?1705578769",
+        "marketingBiography": "Curriculum Manager at DataCamp",
+        "name": "Hadrien Lacroix",
+        "url": "https://www.datacamp.com/instructors/hadrien-d4e73b49-bc29-46b7-a485-2f598f38e3b9"
+      },
+      {
+        "biography": "<p>Sara is a graduate of a master&#39;s degree in Business Engineering and Marketing Analysis. Prior to working at DataCamp she worked as a Data Science consultant for a Belgian IT company. Sara is passionate about education, data science, and business and loves that she is able to combine all of these disciplines in her job at DataCamp.</p>\n",
+        "id": 2922377,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/001/078/original/21774.JPEG?1705586008",
+        "marketingBiography": "Data Scientist at DataCamp",
+        "name": "Sara Billen",
+        "url": "https://www.datacamp.com/instructors/sara-billen"
+      },
+      {
+        "biography": "<p>Lis holds a Master&#39;s degree in Computer Science from McGill University with a focus on computer science education research and applied machine learning. She&#39;s passionate about teaching all things related to data and improving the accessibility of these topics. </p>\n",
+        "id": 4338903,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/001/981/original/Webp.net-resizeimage.jpg?1705586508",
+        "marketingBiography": "Content Program Manager at Duolingo",
+        "name": "Lis Sulmont",
+        "url": "https://www.datacamp.com/instructors/lis-sulmont"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/understanding-data-science/continue",
+    "shortDescription": "An introduction to data science with no coding involved.",
+    "slug": "understanding-data-science",
+    "technologies": [
+      {
+        "id": 7,
+        "name": "Theory"
+      }
+    ],
+    "timeNeededInHours": 2,
+    "title": "Understanding Data Science",
+    "userCourse": null
+  },
+  {
+    "datasets": [],
+    "difficultyLevel": 1,
+    "id": 31950,
+    "inProducts": [
+      "learn.data_literacy"
+    ],
+    "instructors": [
+      {
+        "biography": "<p>James is a Curriculum Manager at DataCamp, where he collaborates with experts from industry and academia to create courses on AI, data science, and analytics. He has led nine DataCamp courses on diverse topics in Python, R, AI developer tooling, and Google Sheets. He has a Master&#39;s degree in Physics and Astronomy from Durham University, where he specialized in high-redshift quasar detection. In his spare time, he enjoys restoring retro toys and electronics.\n<br /> <br />\n<a href=\"https://www.linkedin.com/in/jameschapman5/\">Follow James on LinkedIn</a></p>\n",
+        "id": 2513855,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/002/582/original/20210323_102554_small2.jpg?1705586726",
+        "marketingBiography": "Curriculum Manager, DataCamp",
+        "name": "James Chapman",
+        "url": "https://www.datacamp.com/instructors/james-datacamp"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/introduction-to-chatgpt/continue",
+    "shortDescription": "Learn how to use ChatGPT. Discover best practices for writing prompts and explore common business use cases for the powerful AI tool.",
+    "slug": "introduction-to-chatgpt",
+    "technologies": [
+      {
+        "id": 26,
+        "name": "ChatGPT"
+      }
+    ],
+    "timeNeededInHours": 1,
+    "title": "Introduction to ChatGPT",
+    "userCourse": null
+  },
+  {
+    "datasets": [
+      {
+        "name": "Films CSV",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/6052/datasets/37cb97f64e176219cbde0b8c82b998cb9a9ead75/films.csv"
+      },
+      {
+        "name": "People CSV",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/6052/datasets/1e75a2f9a7944d7a896ba08febe636440c05c9c0/people.csv"
+      },
+      {
+        "name": "Reviews CSV",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/6052/datasets/6fbbcd06cd6f0425e6a857f127b96fa8935189f1/reviews.csv"
+      },
+      {
+        "name": "Roles CSV",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/6052/datasets/907f06f7bf26cf631e01ddead0d2b19a50721f7e/roles.csv"
+      }
+    ],
+    "difficultyLevel": 1,
+    "id": 29303,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Jasmin is a Content Developer at DataCamp. After ten years as a global marketing manager in the music industry, she recently changed careers to follow her curiosity for data. Her passion is value exchange and making data science accessible to all.</p>\n",
+        "id": 10673533,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/002/714/original/myprofilephoto.jpeg?1705586799",
+        "marketingBiography": "Data Science Content Developer, DataCamp",
+        "name": "Jasmin Ludolf",
+        "url": "https://www.datacamp.com/instructors/jasminludolf"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/intermediate-sql/continue",
+    "shortDescription": "Accompanied at every step with hands-on practice queries, this course teaches you everything you need to know to analyze data using your own SQL code today!",
+    "slug": "intermediate-sql",
+    "technologies": [
+      {
+        "id": 3,
+        "name": "SQL"
+      }
+    ],
+    "timeNeededInHours": 4,
+    "title": "Intermediate SQL",
+    "userCourse": null
+  },
+  {
+    "datasets": [
+      {
+        "name": "Gapminder",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/287/datasets/5b1e4356f9fa5b5ce32e9bd2b75c777284819cca/gapminder.csv"
+      },
+      {
+        "name": "Cars",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/287/datasets/79b3c22c47a2f45a800c62cae39035ff2ea4e609/cars.csv"
+      },
+      {
+        "name": "BRICS",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/287/datasets/b60fb5bdbeb4e4ab0545c485d351e6ff5428a155/brics.csv"
+      }
+    ],
+    "difficultyLevel": 1,
+    "id": 799,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Hugo is a data scientist, educator, writer and podcaster formerly at DataCamp. His main interests are promoting data &amp; AI literacy, helping to spread data skills through organizations and society and doing amateur stand up comedy in NYC. If you want to know what he likes to talk about, definitely check out <a href=\"https://www.datacamp.com/community/podcast\">DataFramed</a>, the DataCamp podcast, which he hosted and produced.</p>\n",
+        "id": 301837,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/000/006/original/hugoaboutpic.jpg?1705506415",
+        "marketingBiography": "Data Scientist",
+        "name": "Hugo Bowne-Anderson",
+        "url": "https://www.datacamp.com/instructors/hugobowne"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/intermediate-python/continue",
+    "shortDescription": "Level up your data science skills by creating visualizations using Matplotlib and manipulating DataFrames with pandas.",
+    "slug": "intermediate-python",
+    "technologies": [
+      {
+        "id": 2,
+        "name": "Python"
+      }
+    ],
+    "timeNeededInHours": 4,
+    "title": "Intermediate Python",
+    "userCourse": null
+  },
+  {
+    "datasets": [
+      {
+        "name": "Navigation Cheatsheet",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/5739/datasets/fa2e0c9c164c5f244ceb78be8755e63fb6a1d757/Navigation Cheatsheet.pdf"
+      },
+      {
+        "name": "DataCamp vs. Local Experience",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/5739/datasets/92bd439073f4dd464339dd7fdc4469456cade23f/DataCamp vs Local.pdf"
+      },
+      {
+        "name": "Exercises and Datasets",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/5739/datasets/69ccebc3b3e98ea6d1f86cac3f4da37b23d19a8f/Introduction to Power BI - Exercises and Datasets.pdf"
+      }
+    ],
+    "difficultyLevel": 1,
+    "id": 24388,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Sara is a graduate of a master&#39;s degree in Business Engineering and Marketing Analysis. Prior to working at DataCamp she worked as a Data Science consultant for a Belgian IT company. Sara is passionate about education, data science, and business and loves that she is able to combine all of these disciplines in her job at DataCamp.</p>\n",
+        "id": 2922377,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/001/078/original/21774.JPEG?1705586008",
+        "marketingBiography": "Data Scientist at DataCamp",
+        "name": "Sara Billen",
+        "url": "https://www.datacamp.com/instructors/sara-billen"
+      },
+      {
+        "biography": "<p>Iason holds a Master’s degree in Chemistry from UCL and is now a Content Developer at DataCamp. He is also a certified Power BI data analyst. Prior to working at DataCamp, Iason held a number of analytics roles within a range of industries across different countries. Having a passion for education, data, and storytelling, he has found a great place at DataCamp to develop engaging content for learning. As an avid sports fan, he has a keen interest in sports statistics</p>\n",
+        "id": 10436255,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/002/649/original/T03RWB9LB-U033CNU744U-f560b30ebc1d-512.jpg?1705586738",
+        "marketingBiography": "Content Developer at DataCamp",
+        "name": "Iason Prassides",
+        "url": "https://www.datacamp.com/instructors/iasonprassides"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/introduction-to-power-bi/continue",
+    "shortDescription": "Master the Power BI basics and learn to use the data visualization software to build impactful reports.",
+    "slug": "introduction-to-power-bi",
+    "technologies": [
+      {
+        "id": 11,
+        "name": "Power BI"
+      }
+    ],
+    "timeNeededInHours": 3,
+    "title": "Introduction to Power BI",
+    "userCourse": null
+  },
+  {
+    "datasets": [
+      {
+        "name": "Avocado prices",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/5386/datasets/5528f46cc712c9083a6881f787fc9b34ab53d5ea/avoplotto.pkl"
+      },
+      {
+        "name": "Walmart sales",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/5386/datasets/5110afec30fc30bc5f3cf67b188d1513c3d6d940/sales_subset.csv"
+      },
+      {
+        "name": "Homelessness data",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/5386/datasets/1a0ab2e8557930ec06473c16521874e516a216ae/homelessness.csv"
+      },
+      {
+        "name": "Temperatures",
+        "assetUrl": "https://assets.datacamp.com/production/repositories/5386/datasets/47f5fde162bae3549ca7d5c26fb4c4639f100f28/temperatures.csv"
+      }
+    ],
+    "difficultyLevel": 1,
+    "id": 22066,
+    "inProducts": [],
+    "instructors": [
+      {
+        "biography": "<p>Maggie is a Curriculum Manager at DataCamp. She holds a Bachelor&#39;s degree in Statistics and Computer Science from Brown University, where she spent lots of time teaching math, programming, and statistics as a tutor and teaching assistant. She&#39;s passionate about teaching all things data-related and making programming accessible to everyone.</p>\n",
+        "id": 843691,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/000/079/original/headshot_small.png?1705506699",
+        "marketingBiography": "Curriculum Manager at DataCamp",
+        "name": "Maggie Matsui",
+        "url": "https://www.datacamp.com/instructors/maggiematsui"
+      },
+      {
+        "biography": "<p>Richie is a Data Evangelist at DataCamp. He has been using R since 2004, in the fields of proteomics, debt collection, and chemical health and safety. He has released almost 30 R packages on CRAN and Bioconductor &ndash; most famously the <a href=\"https://cran.r-project.org/web/packages/assertive/index.html\">assertive</a> suite of packages &ndash; as well as creating and contributing to many others.  He also has written two books on R programming, <a href=\"http://shop.oreilly.com/product/0636920028352.do\">Learning R</a> and <a href=\"https://www.crcpress.com/Testing-R-Code/Cotton/p/book/9781498763653\">Testing R Code</a>.</p>\n",
+        "id": 547073,
+        "imageUrl": "https://assets.datacamp.com/authors/avatars/000/000/004/original/richie-new-barnet.jpg?1705506413",
+        "marketingBiography": "Data Evangelist at DataCamp",
+        "name": "Richie Cotton",
+        "url": "https://www.datacamp.com/instructors/richie"
+      }
+    ],
+    "link": "https://www.datacamp.com/courses/data-manipulation-with-pandas/continue",
+    "shortDescription": "Learn how to import and clean data, calculate statistics, and create visualizations with pandas. ",
+    "slug": "data-manipulation-with-pandas",
+    "technologies": [
+      {
+        "id": 2,
+        "name": "Python"
+      }
+    ],
+    "timeNeededInHours": 4,
+    "title": "Data Manipulation with pandas",
+    "userCourse": null
+  }
+]
