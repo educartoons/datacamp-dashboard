@@ -121,3 +121,4 @@ Managing a Global Store
 - [x] useMemo
 - [x] memo
 - [x] useCallback
+- [x] useReducer

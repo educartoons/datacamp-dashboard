@@ -1,24 +1,80 @@
-import { ChangeEvent, useState, useCallback } from "react";
+import { ChangeEvent, useReducer } from "react";
 import { CoursesGrid } from "../components/CoursesGrid/CoursesGrid";
+import { Button } from "../components/Button/Button";
+
+interface IState {
+  searchtext: string;
+  counter: number;
+}
+
+type Actions =
+  | {
+      type: "add";
+    }
+  | {
+      type: "minus";
+    }
+  | {
+      type: "changeSearchText";
+      payload: string;
+    };
+
+const initialState = {
+  counter: 0,
+  searchtext: "",
+};
+
+const reducer = (state: IState, action: Actions) => {
+  switch (action.type) {
+    case "add":
+      return {
+        ...state,
+        counter: state.counter + 1,
+      };
+    case "minus": {
+      return {
+        ...state,
+        counter: state.counter - 1,
+      };
+    }
+    case "changeSearchText": {
+      return {
+        ...state,
+        searchtext: action.payload,
+      };
+    }
+
+    default:
+      return state;
+  }
+};
 
 function CoursesPage() {
-  const [searchText, setSearchText] = useState("");
-  const [user, setUser] = useState("");
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setSearchText(event.target.value);
+  const handleChangeInput = (event: ChangeEvent<HTMLInputElement>) => {
+    dispatch({
+      type: "changeSearchText",
+      payload: event.target.value,
+    });
   };
-
-  const handleChangeUser = useCallback(() => {
-    console.log("cambiando nombre de usuario");
-    setUser("Eduar");
-  }, []);
 
   return (
     <>
-      <h1>Courses Page</h1>
-      <input type="text" onChange={handleChange} value={searchText} />
-      <CoursesGrid user={user} handleChangeUser={handleChangeUser} />
+      <h2>Counter {state.counter}</h2>
+      <Button variant="secondary" onClick={() => dispatch({ type: "add" })}>
+        Add + 1
+      </Button>
+      <Button variant="secondary" onClick={() => dispatch({ type: "minus" })}>
+        Minus - 1
+      </Button>
+      <input
+        onChange={handleChangeInput}
+        type="text"
+        value={state.searchtext}
+      />
+      <h3>{state.searchtext}</h3>
+      <CoursesGrid />
     </>
   );
 }
