@@ -118,7 +118,13 @@ Managing a Global Store
 
 ## 10. Performance
 
+- [x] useContext
 - [x] useMemo
 - [x] memo
 - [x] useCallback
 - [x] useReducer
+- [ ] useRef
+
+- [ ] useDeferrerValue
+- [ ] useLayoutEffect
+- [ ] useTransition
