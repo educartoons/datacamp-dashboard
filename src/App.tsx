@@ -1,14 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
-import { CoursesGrid } from "./components/CoursesGrid/CoursesGrid";
 import { Wrapper } from "./components/Wrapper/Wrapper";
 import { Quiz } from "./components/Quiz/Quiz";
-import { UserContext, UserContextProvider } from "./context/UserContext";
+import { UserContextProvider } from "./context/UserContext";
+import { CoursesPage } from "./pages/CoursesPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <CoursesGrid />,
+    element: <CoursesPage />,
   },
   {
     path: "/quiz",

@@ -119,4 +119,5 @@ Managing a Global Store
 ## 10. Performance
 
 - [x] useMemo
-- [ ] useCallback
+- [x] memo
+- [x] useCallback
