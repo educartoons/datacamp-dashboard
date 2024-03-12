@@ -1,22 +1,28 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import { CoursesGrid } from "../components/CoursesGrid/CoursesGrid";
 
 function CoursesPage() {
-  const counterRef = useRef(0);
+  const [seconds, setSeconds] = useState(0);
+  const clearRef = useRef<number | null>(null);
 
-  console.log("Renderng CoursesPage");
+  console.log("rendering");
 
-  const handleAdd = () => {
-    counterRef.current = counterRef.current + 1;
-    console.log(counterRef.current);
-    if (counterRef.current > 10) {
-      console.log("Haz una llamada a un API");
-    }
+  const handleStart = () => {
+    clearRef.current = setInterval(() => {
+      setSeconds((prevValue) => prevValue + 1);
+    }, 1000);
+  };
+
+  const handleStop = () => {
+    clearInterval(clearRef.current!);
   };
 
   return (
     <>
-      <button onClick={handleAdd}>Add + 1</button>
+      <h1>Timer</h1>
+      <h2>{seconds}</h2>
+      <button onClick={handleStart}>Start</button>
+      <button onClick={handleStop}>stop</button>
       <CoursesGrid />
     </>
   );
