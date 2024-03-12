@@ -1,79 +1,22 @@
-import { ChangeEvent, useReducer } from "react";
+import { useRef } from "react";
 import { CoursesGrid } from "../components/CoursesGrid/CoursesGrid";
-import { Button } from "../components/Button/Button";
-
-interface IState {
-  searchtext: string;
-  counter: number;
-}
-
-type Actions =
-  | {
-      type: "add";
-    }
-  | {
-      type: "minus";
-    }
-  | {
-      type: "changeSearchText";
-      payload: string;
-    };
-
-const initialState = {
-  counter: 0,
-  searchtext: "",
-};
-
-const reducer = (state: IState, action: Actions) => {
-  switch (action.type) {
-    case "add":
-      return {
-        ...state,
-        counter: state.counter + 1,
-      };
-    case "minus": {
-      return {
-        ...state,
-        counter: state.counter - 1,
-      };
-    }
-    case "changeSearchText": {
-      return {
-        ...state,
-        searchtext: action.payload,
-      };
-    }
-
-    default:
-      return state;
-  }
-};
 
 function CoursesPage() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const counterRef = useRef(0);
 
-  const handleChangeInput = (event: ChangeEvent<HTMLInputElement>) => {
-    dispatch({
-      type: "changeSearchText",
-      payload: event.target.value,
-    });
+  console.log("Renderng CoursesPage");
+
+  const handleAdd = () => {
+    counterRef.current = counterRef.current + 1;
+    console.log(counterRef.current);
+    if (counterRef.current > 10) {
+      console.log("Haz una llamada a un API");
+    }
   };
 
   return (
     <>
-      <h2>Counter {state.counter}</h2>
-      <Button variant="secondary" onClick={() => dispatch({ type: "add" })}>
-        Add + 1
-      </Button>
-      <Button variant="secondary" onClick={() => dispatch({ type: "minus" })}>
-        Minus - 1
-      </Button>
-      <input
-        onChange={handleChangeInput}
-        type="text"
-        value={state.searchtext}
-      />
-      <h3>{state.searchtext}</h3>
+      <button onClick={handleAdd}>Add + 1</button>
       <CoursesGrid />
     </>
   );
