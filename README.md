@@ -115,3 +115,8 @@ Managing a Global Store
 - [ ] Hooks Pattern
 
 ## 9. SOLID Principles
+
+## 10. Performance
+
+- [x] useMemo
+- [ ] useCallback
