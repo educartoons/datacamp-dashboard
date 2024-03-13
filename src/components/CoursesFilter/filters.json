@@ -1,0 +1,230 @@
+{
+  "filterGroups": [
+    {
+      "key": "technologies",
+      "label": "Filter.common.technology",
+      "options": [
+        {
+          "label": "Python",
+          "value": "2"
+        },
+        {
+          "label": "SQL",
+          "value": "3"
+        },
+        {
+          "label": "R",
+          "value": "1"
+        },
+        {
+          "label": "Power BI",
+          "value": "11"
+        },
+        {
+          "label": "Tableau",
+          "value": "9"
+        },
+        {
+          "label": "Alteryx",
+          "value": "34"
+        },
+        {
+          "label": "Excel",
+          "value": "10"
+        },
+        {
+          "label": "Google Sheets",
+          "value": "6"
+        },
+        {
+          "label": "Docker",
+          "value": "13"
+        },
+        {
+          "label": "ChatGPT",
+          "value": "26"
+        },
+        {
+          "label": "OpenAI",
+          "value": "25"
+        },
+        {
+          "label": "PyTorch",
+          "value": "27"
+        },
+        {
+          "label": "Snowflake",
+          "value": "17"
+        },
+        {
+          "label": "Databricks",
+          "value": "22"
+        },
+        {
+          "label": "Airflow",
+          "value": "20"
+        },
+        {
+          "label": "Spark",
+          "value": "28"
+        },
+        {
+          "label": "dbt",
+          "value": "23"
+        },
+        {
+          "label": "Azure",
+          "value": "29"
+        },
+        {
+          "label": "AWS",
+          "value": "21"
+        },
+        {
+          "label": "Shell",
+          "value": "5"
+        },
+        {
+          "label": "Julia",
+          "value": "12"
+        },
+        {
+          "label": "Scala",
+          "value": "8"
+        },
+        {
+          "label": "MLflow",
+          "value": "24"
+        },
+        {
+          "label": "Theory",
+          "value": "7"
+        },
+        {
+          "label": "Git",
+          "value": "4"
+        }
+      ],
+      "primary": true,
+      "singleSelect": true,
+      "type": "select"
+    },
+    {
+      "key": "topics",
+      "label": "Filter.common.topic",
+      "options": [
+        {
+          "label": "Applied Finance",
+          "value": "9"
+        },
+        {
+          "label": "Artificial Intelligence",
+          "value": "16"
+        },
+        {
+          "label": "Cloud",
+          "value": "22"
+        },
+        {
+          "label": "Data Engineering",
+          "value": "14"
+        },
+        {
+          "label": "Data Literacy",
+          "value": "17"
+        },
+        {
+          "label": "Data Management",
+          "value": "13"
+        },
+        {
+          "label": "Data Manipulation",
+          "value": "3"
+        },
+        {
+          "label": "Data Preparation",
+          "value": "18"
+        },
+        {
+          "label": "Data Visualization",
+          "value": "4"
+        },
+        {
+          "label": "Data Warehouse",
+          "value": "20"
+        },
+        {
+          "label": "Exploratory Data Analysis",
+          "value": "19"
+        },
+        {
+          "label": "Leadership",
+          "value": "21"
+        },
+        {
+          "label": "Machine Learning",
+          "value": "6"
+        },
+        {
+          "label": "Probability & Statistics",
+          "value": "7"
+        },
+        {
+          "label": "Programming",
+          "value": "10"
+        },
+        {
+          "label": "Reporting",
+          "value": "5"
+        },
+        {
+          "label": "Other",
+          "value": "11"
+        }
+      ],
+      "primary": true,
+      "type": "select"
+    },
+    {
+      "key": "status",
+      "label": "Filter.common.status",
+      "options": [
+        {
+          "label": "Not Started",
+          "value": "not-started"
+        },
+        {
+          "label": "In Progress",
+          "value": "in-progress"
+        },
+        {
+          "label": "Completed",
+          "value": "completed"
+        }
+      ],
+      "type": "select"
+    },
+    {
+      "key": "sort",
+      "options": [
+        {
+          "label": "most-relevant",
+          "value": "most-relevant"
+        },
+        {
+          "label": "newest",
+          "value": "newest"
+        }
+      ],
+      "type": "sort"
+    },
+    {
+      "defaultValue": false,
+      "headless": true,
+      "key": "prerequisites",
+      "label": "Filter.common.prerequisitesMet",
+      "tooltip": "Filter.common.prerequisitesMetTooltip",
+      "type": "boolean"
+    }
+  ]
+}
