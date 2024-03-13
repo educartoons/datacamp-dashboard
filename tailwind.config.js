@@ -6,6 +6,7 @@ export default {
       colors: {
         datacampBlue: "#05192d",
         datacampGreen: "#01ef62",
+        datacampGreenLight: "#65ff8f",
         datacampSkyBlue: "#01bdfc",
       },
     },
