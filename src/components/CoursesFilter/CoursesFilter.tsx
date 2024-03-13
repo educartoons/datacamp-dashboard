@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, useMemo } from "react";
+import { useRef, useEffect, useState } from "react";
 import filters from "./filters.json";
 
 const PIXEL_PER_LETTER = 7;
@@ -8,11 +8,11 @@ const GAP = 15;
 function CoursesFilter() {
   const [itemsDisplayed, setItemsDisplayed] = useState(0);
   const divRef = useRef<HTMLDivElement>(null);
-  const group = useMemo(() => {
-    return filters.filterGroups.find((group) => group.key === "technologies");
-  }, []);
+  const group = filters.filterGroups.find(
+    (group) => group.key === "technologies"
+  );
 
-  const tags = group!.options;
+  const tags = group!.options || [];
 
   const computeNumberOfItemsToDisplay = (divWidth: number) => {
     let items = 0;
@@ -31,6 +31,7 @@ function CoursesFilter() {
 
   useEffect(() => {
     const handleResize = () => {
+      console.count("handleResize");
       if (divRef.current) {
         computeNumberOfItemsToDisplay(divRef.current.offsetWidth);
       }
@@ -39,6 +40,9 @@ function CoursesFilter() {
     window.addEventListener("resize", handleResize);
 
     handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
