@@ -4,6 +4,7 @@ import { Wrapper } from "./components/Wrapper/Wrapper";
 import { Quiz } from "./components/Quiz/Quiz";
 import { UserContextProvider } from "./context/UserContext";
 import { CoursesPage } from "./pages/CoursesPage";
+import { AppleCarousel } from "./components/AppleCarousel/AppleCarousel";
 
 const router = createBrowserRouter([
   {
@@ -24,11 +25,7 @@ function App() {
   return (
     <>
       <UserContextProvider>
-        <Layout>
-          <Wrapper>
-            <RouterProvider router={router} />
-          </Wrapper>
-        </Layout>
+        <AppleCarousel />
       </UserContextProvider>
     </>
   );
