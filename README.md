@@ -128,3 +128,5 @@ Managing a Global Store
 - [ ] useDeferrerValue
 - [ ] useLayoutEffect
 - [ ] useTransition
+
+- use of lazy loads

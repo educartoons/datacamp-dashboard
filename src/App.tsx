@@ -1,30 +1,26 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { lazy } from "react";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
 import { Wrapper } from "./components/Wrapper/Wrapper";
-import { Quiz } from "./components/Quiz/Quiz";
 import { UserContextProvider } from "./context/UserContext";
-import { CoursesPage } from "./pages/CoursesPage";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <CoursesPage />,
-  },
-  {
-    path: "/quiz",
-    element: <Quiz />,
-  },
-  {
-    path: "*",
-    element: <p>Page not found</p>,
-  },
-]);
+const CoursesPage = lazy(() => import("./pages/CoursesPage"));
+const QuizPage = lazy(() => import("./pages/QuizPage"));
 
 function App() {
   return (
     <>
       <UserContextProvider>
-        <RouterProvider router={router} />
+        <Layout>
+          <Wrapper>
+            <Router>
+              <Routes>
+                <Route path="/" element={<CoursesPage />} />
+                <Route path="/quiz" element={<QuizPage />} />
+              </Routes>
+            </Router>
+          </Wrapper>
+        </Layout>
       </UserContextProvider>
     </>
   );
