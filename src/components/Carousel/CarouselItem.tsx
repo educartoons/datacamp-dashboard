@@ -68,4 +68,10 @@ function CarouselItem({
   );
 }
 
+// Performance and Optimization
+// useMemo, useContext, memo, useState, useRef, useEffect
+// CDN: Content Delivery Network {assets}
+// minification
+// adding Lazy Loaders
+
 export { CarouselItem };
