@@ -1,9 +1,9 @@
-import { Courses } from "../modules/Courses";
+import { Carousel } from "@root/components/Carousel/Carousel";
 
 function CoursesPage() {
   return (
     <>
-      <Courses />
+      <Carousel />
     </>
   );
 }

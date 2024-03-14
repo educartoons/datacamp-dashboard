@@ -24,11 +24,7 @@ function App() {
   return (
     <>
       <UserContextProvider>
-        <Layout>
-          <Wrapper>
-            <RouterProvider router={router} />
-          </Wrapper>
-        </Layout>
+        <RouterProvider router={router} />
       </UserContextProvider>
     </>
   );
