@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
 import { Wrapper } from "./components/Wrapper/Wrapper";
@@ -12,10 +12,12 @@ function App() {
       <Layout>
         <Wrapper>
           <Router>
-            <Routes>
-              <Route path="/" element={<CoursesPage />} />
-              <Route path="/quiz" element={<QuizPage />} />
-            </Routes>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Routes>
+                <Route path="/" element={<CoursesPage />} />
+                <Route path="/quiz" element={<QuizPage />} />
+              </Routes>
+            </Suspense>
           </Router>
         </Wrapper>
       </Layout>
