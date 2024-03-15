@@ -106,7 +106,17 @@ We will use react-router-dom
 
 ## 7. Redux
 
-Managing a Global Store
+First install redux
+
+```
+npm install react-redux
+```
+
+install redux/toolkit
+
+```
+npm install @reduxjs/toolkit
+```
 
 ## 8. Design Patterns
 

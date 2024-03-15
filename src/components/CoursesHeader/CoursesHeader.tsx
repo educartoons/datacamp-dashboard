@@ -1,6 +1,10 @@
 import { BulbLightIcon, CircleImage } from "../SVGS/Svgs";
+import { useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
 
 function CoursesHeader() {
+  const user = useSelector((state: RootState) => state.user);
+
   return (
     <header className="bg-datacampBlue px-6 py-6 rounded mb-4 flex justify-between items-center">
       <div className="">
@@ -16,6 +20,8 @@ function CoursesHeader() {
           courses are interactive, combining short videos with hands-on
           exercises.
         </p>
+        <p className="text-white">{user.name}</p>
+        <p className="text-white">{user.address}</p>
       </div>
       <div className="hidden md:flex relative">
         <CircleImage />

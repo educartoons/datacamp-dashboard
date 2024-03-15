@@ -1,5 +1,8 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, ChangeEvent } from "react";
 import filters from "./filters.json";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
+import { setAddress } from "@root/redux/userSlice";
 
 const PIXEL_PER_LETTER = 7;
 const PADDING_BUTTON = 16;
@@ -7,10 +10,21 @@ const GAP = 15;
 
 function CoursesFilter() {
   const [itemsDisplayed, setItemsDisplayed] = useState(0);
+  const user = useSelector((state: RootState) => state.user);
   const divRef = useRef<HTMLDivElement>(null);
   const group = filters.filterGroups.find(
     (group) => group.key === "technologies"
   );
+  const dispatch = useDispatch();
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    console.log("changing", event.target.value);
+    dispatch(
+      setAddress({
+        address: event.target.value,
+      })
+    );
+  };
 
   const tags = group!.options || [];
 
@@ -46,18 +60,21 @@ function CoursesFilter() {
   }, []);
 
   return (
-    <div ref={divRef} className="flex gap-2 mb-3">
-      {tags?.slice(0, itemsDisplayed).map((tag) => (
-        <button
-          key={tag.value}
-          className="bg-zinc-200 font-normal text-sm rounded whitespace-nowrap px-2 py-1"
-        >
-          {tag.label}
+    <div>
+      <div ref={divRef} className="flex gap-2 mb-3">
+        {tags?.slice(0, itemsDisplayed).map((tag) => (
+          <button
+            key={tag.value}
+            className="bg-zinc-200 font-normal text-sm rounded whitespace-nowrap px-2 py-1"
+          >
+            {tag.label}
+          </button>
+        ))}
+        <button className="bg-zinc-200 font-semibold text-sm rounded whitespace-nowrap px-2 py-1">
+          {tags?.length - itemsDisplayed}+
         </button>
-      ))}
-      <button className="bg-zinc-200 font-semibold text-sm rounded whitespace-nowrap px-2 py-1">
-        {tags?.length - itemsDisplayed}+
-      </button>
+      </div>
+      <input type="text" value={user.address} onChange={handleChange} />
     </div>
   );
 }
