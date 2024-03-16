@@ -2,10 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "../Button/Button";
 import { Level } from "./Level";
 import { ProgressBar } from "./ProgressBar";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
-import { setUser } from "../../redux/userSlice";
-import { ChangeEvent, useState } from "react";
 
 type Instructor = {
   name: string;
@@ -25,17 +21,7 @@ type CourseCardProps = {
 };
 
 function CourseCard({ course }: CourseCardProps) {
-  const user = useSelector((state: RootState) => state.user);
-  const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    dispatch(
-      setUser({
-        name: event.target.value,
-      })
-    );
-  };
 
   return (
     <div className="bg-white rounded border border-gray-200 flex flex-col justify-between">
@@ -43,16 +29,12 @@ function CourseCard({ course }: CourseCardProps) {
         <h3 className="text-[10px] text-gray-400 uppercase tracking-widest">
           Course
         </h3>
-        <input type="text" value={user.name} onChange={handleChange} />
         <h2 className="font-semibold text-lg mt-1 mb-1">{course.title}</h2>
         <Level level={course.difficultyLevel} />
         <div className="mt-2">
           <p className="text-sm text-gray-600 font-normal">
             {course.shortDescription}
           </p>
-        </div>
-        <div>
-          <p>{user.name}</p>
         </div>
         <div className="flex items-center mt-1">
           <figure className="h-7 w-7">

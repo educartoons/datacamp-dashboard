@@ -15,17 +15,6 @@ function CoursesFilter() {
   const group = filters.filterGroups.find(
     (group) => group.key === "technologies"
   );
-  const dispatch = useDispatch();
-
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log("changing", event.target.value);
-    dispatch(
-      setAddress({
-        address: event.target.value,
-      })
-    );
-  };
-
   const tags = group!.options || [];
 
   const computeNumberOfItemsToDisplay = (divWidth: number) => {
@@ -74,7 +63,6 @@ function CoursesFilter() {
           {tags?.length - itemsDisplayed}+
         </button>
       </div>
-      <input type="text" value={user.address} onChange={handleChange} />
     </div>
   );
 }

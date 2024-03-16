@@ -34,8 +34,9 @@ function CarouselItem({
   const translate = computeTranslateX();
 
   const opacity = currentIndex === index ? 1 : 0.2;
+  const buttonsOpacity = currentIndex === index ? 1 : 0;
 
-  const translateText = currentIndex === index ? 0 : 200;
+  const translateText = currentIndex === index ? 0 : 20;
 
   return (
     <div
@@ -54,8 +55,8 @@ function CarouselItem({
         <div
           className="absolute bottom-4 left-4"
           style={{
-            opacity: opacity,
-            transition: "all 1s cubic-bezier(0.645, 0.045, 0.355, 1)",
+            opacity: buttonsOpacity,
+            transition: "all 0.6s",
             transform: `translate3d(0, ${translateText}px, 0)`,
           }}
         >
@@ -67,11 +68,5 @@ function CarouselItem({
     </div>
   );
 }
-
-// Performance and Optimization
-// useMemo, useContext, memo, useState, useRef, useEffect
-// CDN: Content Delivery Network {assets}
-// minification
-// adding Lazy Loaders
 
 export { CarouselItem };
